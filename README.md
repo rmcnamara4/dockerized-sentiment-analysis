@@ -18,21 +18,20 @@ from HuggingFace’s Transformers library, fine-tuned on the SST-2 dataset for b
 
 ⸻
 
+<pre>
 Project Structure
 .
 ├── app/
-│   ├── app.py              # FastAPI app definition
-│   ├── model.py            # Model loading and prediction logic
-│   └── requirements.txt    # Python dependencies
+│   ├── app.py             # FastAPI app definition
+│   ├── model.py           # Model loading and prediction logic
+│   └── requirements.txt   # Python dependencies
 │
-├── notebooks/              # Experimentation and model evaluation
-│
-├── tests/                  # Script to test API calls
-│
-├── Dockerfile              # Docker build instructions
-├── .gitignore              # Ignore rules for Git
-└── README.md               # Project overview and instructions
-
+├── notebooks/             # Experimentation and model evaluation
+├── tests/                 # Script to test API calls
+├── Dockerfile             # Docker build instructions
+├── .gitignore             # Git ignore rules
+└── README.md              # Project overview
+</pre>
 
 ⸻
 
