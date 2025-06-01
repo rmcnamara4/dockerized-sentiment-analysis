@@ -26,7 +26,7 @@ def predict_batch(text: list[str]) -> list[dict]:
     with torch.no_grad(): 
         outputs = model(**inputs) 
         probs = F.softmax(outputs.logits, dim = 1) 
-        labels = torch.argmax(probs, dim = 1).item() 
+        labels = torch.argmax(probs, dim = 1)
     
     results = []
     for i in range(len(text)): 
