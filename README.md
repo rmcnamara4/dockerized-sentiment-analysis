@@ -18,8 +18,9 @@ from HuggingFace’s Transformers library, fine-tuned on the SST-2 dataset for b
 
 ⸻
 
-<pre>
 Project Structure
+
+<pre>
 .
 ├── app/
 │   ├── app.py             # FastAPI app definition
