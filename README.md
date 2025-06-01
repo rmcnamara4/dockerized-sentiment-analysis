@@ -1,14 +1,14 @@
-Sentiment Analysis API (Dockerized with FastAPI + BERT)
+# Sentiment Analysis API (Dockerized with FastAPI + BERT)
 
 A production-ready sentiment analysis API using a pre-trained BERT model from HuggingFace, powered by FastAPI and containerized with Docker.
 
-🚀 Features
+## 🚀 Features
 	•	Batch sentiment prediction (positive/negative) via REST API
 	•	Powered by distilbert-base-uncased-finetuned-sst-2-english
 	•	Lightweight FastAPI app for efficient inference
 	•	Dockerized for easy deployment and portability
 
-🧠 Model
+## 🧠 Model
 
 This API uses:
 
@@ -18,7 +18,7 @@ from HuggingFace’s Transformers library, fine-tuned on the SST-2 dataset for b
 
 ⸻
 
-Project Structure
+## Project Structure
 
 <pre>
 .
@@ -36,13 +36,13 @@ Project Structure
 
 ⸻
 
-🐋 Docker Usage
+## 🐋 Docker Usage
 
 🔧 Build the Docker image
 
 docker build -t sentiment-api .
 
-▶️ Run the container
+## ▶️ Run the container
 
 docker run -p 8000:8000 sentiment-api
 
@@ -50,7 +50,7 @@ Your API is now running at: http://127.0.0.1:8000
 
 ⸻
 
-📫 API Usage
+## 📫 API Usage
 
 Endpoint: POST /predict
 
@@ -76,13 +76,13 @@ Response:
   }
 ]
 
-🔬 Test with curl
+## 🔬 Test with curl
 
 curl -X POST http://127.0.0.1:8000/predict \
   -H "Content-Type: application/json" \
   -d '{"texts": ["Amazing performance!", "I hated the ending."]}'
 
-🌐 Swagger UI
+## 🌐 Swagger UI
 
 Interactive docs available at: http://127.0.0.1:8000/docs
 
@@ -97,7 +97,7 @@ uvicorn app.app:app --reload
 
 ⸻
 
-✅ Future Improvements
+## ✅ Future Improvements
 	•	Add support for fine-tuning on custom data
 	•	Add GET /health endpoint
 	•	Add frontend or deployment instructions
