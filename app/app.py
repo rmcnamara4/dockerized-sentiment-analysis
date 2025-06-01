@@ -5,7 +5,7 @@ from model import predict_batch
 app = FastAPI()
 
 class InputText(BaseModel): 
-    texts = list[str]
+    texts: list[str]
 
 @app.post("/predict")
 def predict_sentiment(input_data: InputText): 
